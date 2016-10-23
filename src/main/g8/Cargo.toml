@@ -1,0 +1,28 @@
+[package]
+name = "$app_name;format="camel"$"
+version = "0.1.0" # auto generated do not edit by hand
+authors = ["$author$"]
+
+[dependencies]
+log = "0.3"
+env_logger = "0.3"
+docopt = "0.6"
+rustc-serialize = "0.3"
+# diesel = { version = "0.8.0", default-features = false, features = ["chrono", "postgres"] }
+# diesel_codegen = { version = "0.8.0", features = ["postgres"] }
+#
+# dotenv = "0.8.0"
+# rustc-serialize = "*"
+# bcrypt = "0.1"
+# time = "0.1"
+# chrono = "0.2"
+# rpassword = "0.3.0"
+
+
+[lib]
+name = "$app_name;format="snake"$"
+path = "src/lib.rs"
+
+[[bin]]
+name = "$app_name;format="normalize"$_main"
+path = "src/bin/$app_name;format="normalize"$_main.rs"
